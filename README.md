@@ -61,6 +61,13 @@ The programs and documents are distributed without any warranty, express or impl
 
 All use of these programs is entirely at the user's own risk.
 
+    You need to cite the following paper when you use this code :
+
+    Christian Wolf, Jean-Michel Jolion and Francoise Chassaing. 
+    Text Localization, Enhancement and Binarization in Multimedia Documents. 
+    International Conference on Pattern Recognition (ICPR), 
+    volume 4, pages 1037-1040, 2002. 
+
 
 
 
