@@ -6,7 +6,10 @@ This code uses an improved contrast maximization version of Niblack/Sauvola et a
 
     You need to cite the following paper when you use this code :
 
-    Christian Wolf, Jean-Michel Jolion and Francoise Chassaing. Text Localization, Enhancement and Binarization in Multimedia Documents. In International Conference on Pattern Recognition (ICPR), volume 4, pages 1037-1040, 2002. 
+    Christian Wolf, Jean-Michel Jolion and Francoise Chassaing. 
+    Text Localization, Enhancement and Binarization in Multimedia Documents. 
+    International Conference on Pattern Recognition (ICPR), 
+    volume 4, pages 1037-1040, 2002. 
 
 ## Usage:
 
@@ -32,7 +35,7 @@ The best working method is 'w', the one which performed 5th in the [DIBCO 2009 c
 
 If no further arguments are provided, than the window sizes are estimated automatically. The argument -k sets the "k" parameter from all 3 papers. 
 
-    IMPORTANT! Note, that the parameter should be set differently according! It might be necessary to set a different parameter for Niblack's method (he recommends -0.2 in his paper). 
+> IMPORTANT! Note, that the parameter should be set differently according! It might be necessary to set a different parameter for Niblack's method (he recommends -0.2 in his paper). 
 
 
 
