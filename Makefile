@@ -1,7 +1,7 @@
 
 
 all:
-	g++ -I/usr/include/opencv binarizewolfjolion.cpp -o binarizewolfjolion `pkg-config opencv --libs`-lstdc++
+	g++ -I/usr/include/opencv binarizewolfjolion.cpp -o binarizewolfjolion `pkg-config opencv --libs` -lstdc++
 
 clean:
 	rm -f binarizewolfjolion
