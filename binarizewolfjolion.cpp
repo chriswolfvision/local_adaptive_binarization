@@ -348,8 +348,8 @@ int main(int argc, char **argv) {
   // Treat the window size
   if (winx <= 0 || winy <= 0) {
     std::cerr << "Input size: " << input.cols << "x" << input.rows << std::endl;
-    winy = (int)(2.0 * input.rows - 1) / 3;
-    winx = (int)input.cols - 1 < winy ? input.cols - 1 : winy;
+    winy = (2 * input.rows - 1) / 3;
+    winx = input.cols - 1 < winy ? input.cols - 1 : winy;
     // if the window is too big, then we asume that the image
     // is not a single text box, but a document page: set
     // the window size to a fixed constant.

@@ -14,22 +14,17 @@ This code uses an improved contrast maximization version of Niblack/Sauvola et a
 
 ## Usage:
 
-The executable is called on the command line and only reads and writes PGM files. Under Linux you can use for instance "convert" (part of the ImageMagick package) to convert to and from the PGM format. The first argument chooses between one of several methods, the first and the second argument specify, respectively, the input and the output file:
-
 ```
-usage: binarize [ -x  -y  -k  ] [ version ]  
+Usage: ./binarizewolfjolion [ -x <winx> -y <winy> -k <parameter> -m <method> ] <inputimage> <outputimage>
 
-version: n   Niblack (1986)         needs white text on black background
-         s   Sauvola et al. (1997)  needs black text on white background
-         w   Wolf et al. (2001)     needs black text on white background
+method: n           Niblack (1986)         needs white text on black background
+        s           Sauvola et al. (1997)  needs black text on white background
+        w (deafult) Wolf et al. (2001)     needs black text on white background
 
-Default version: w (Wolf et al. 2001)
-Default value for "k": 0.5
-
-example:
-       binarize w in.pgm out.pgm
-       binarize in.pgm out.pgm
-       binarize s -x 50 -y 50 -k 0.6 in.pgm out.pgm
+Example:
+       ./binarizewolfjolion -m w in.pgm out.pgm
+       ./binarizewolfjolion in.pgm out.pgm
+       ./binarizewolfjolion -m s -x 50 -y 50 -k 0.6 in.pgm out.pgm
 ```
 
 The best working method is 'w', the one which performed 5th in the [DIBCO 2009 competition](http://www.cvc.uab.es/icdar2009/papers/3725b375.pdf).
